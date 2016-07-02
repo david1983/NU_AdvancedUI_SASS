@@ -1,0 +1,99 @@
+@import 'reset.scss';
+
+.parent{
+	padding:1em;
+	font-size: 1em;
+	background: #ddd;
+	.child{
+		font-size: 1em;
+		color:#48e;
+	}
+}
+
+.parent.sibling{
+    color: #fff;
+	background: #a92;
+}
+
+
+.special{
+	text-decoration: underline;
+}
+
+//example of nested elements
+
+#content{
+    perspective: 1000px;
+    clear:both;
+    margin:auto;
+    display: block;
+    max-width:80%;
+    height:100%;
+    padding:1em;
+    color: #222;
+
+
+
+
+    article{
+        float:left;
+        width:60%;
+        padding:1em;
+        h1{
+            padding:1em 0 ;
+            text-decoration: underline;
+        }
+        p{
+            padding:1em 0;
+            color: #444;
+        }
+    }
+
+    aside{
+        padding:1em;
+        min-height:500px;
+        width:30%;
+        float:right;
+
+        h2{
+            color:#222
+        }
+    }
+
+  .card{
+        box-shadow: 1px 5px 10px grey;
+        background: #fff;
+        transition: 0.5s all;
+        &:hover{
+            transform: scale(1.02) translateY(-3%)
+        }
+
+    }
+
+    button{
+        cursor: pointer;
+        color:#fff;
+        background: #399;
+        border: none;
+        padding:1em;
+        transition:0.3s all;
+        &:visited{}
+        &:hover{
+            background:red
+        }
+        &:active{
+            background:#b44
+        }
+    }
+
+    footer{
+        border: {
+            style: solid;
+            width: 1px;
+            color: #222;
+        }
+        padding:1em;
+        height:100px;
+        clear:both;
+    }
+}
