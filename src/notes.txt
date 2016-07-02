@@ -1,0 +1,5 @@
+- CSS has many issues like repeating the same thing agai and again
+
+Sass is based on programming language
+
+SCSS -> SASS -> CSS
